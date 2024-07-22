@@ -1,0 +1,47 @@
+Os formulários são uma das partes mais importantes da web.
+Sem eles, não haveria uma maneira fácil de coletar dados, pesquisar recursos ou se inscrever
+para receber informações valiosas. Você pode incorporar formulários em sites
+com o elemento <form> do HTML. Dentro do elemento de formulário, várias
+entradas são aninhadas. Essas entradas também são conhecidas como controles
+de formulário.
+
+OBS:Quando um usuário preenche um formulário e o envia com o botão de
+envio, os dados nos controles de formulário são enviados ao servidor por
+meio de métodos GET e POST de solicitação HTTP. Então, como o servidor é
+indicado? O elemento <form> recebe um atributo “action”, que deve ter seu
+valor especificado para o URL do servidor. Ele também recebe um atributo de
+método, onde o método HTTP usado para transmitir os valores ao servidor é
+especificado.
+Este método pode ser GET ou POST. Com o método GET, os valores inseridos
+pelo usuário ficam visíveis no URL quando os dados são enviados. Mas com
+POST, os valores são enviados em cabeçalhos HTTP, portanto, esses valores não
+são visíveis no URL. Se um atributo de método não for usado no formulário,
+assume-se automaticamente que o usuário deseja usar o método GET, pois é o
+padrão.
+
+<html>
+    <head>
+        <title>Formulário</title>
+    </head>
+    <body>
+        <form action="www.site.com.br" method="post">
+            <fildset>
+                <legend>Formulário de Contato</legend>
+                <div class="campos">
+                    <label for="txtNome">Nome:</label>
+                    <input type="text" id="txtNome" placeholder="Digite seu Nome" required/>
+                </div>
+                <div class="campos">
+                    <label for="txtEmail">E-mail:</label>
+                    <input type="text" id="txtEmail" placeholder="Digite seu E-mail" required/>
+                </div>
+                <div class="campos">
+                    <label for="txtMensagem">Mensagem</label>
+                    <textarea id="txtMensagem" cols="30" rows="10" placeholder="Digite sua Mensagem" required></textarea>
+                </div>
+                <input type="submit" value="Enviar"/>
+            </fildset>
+        </form>
+    </body>
+</html>
+

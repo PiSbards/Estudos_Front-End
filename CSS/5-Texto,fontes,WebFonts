@@ -1,0 +1,156 @@
+O CSS fornece várias propriedades que permitem definir vários estilos de
+texto como cor, alinhamento, espaçamento, decoração, transformação etc. de
+forma muito fácil e eficaz. Além disso, permite definir diversas propriedades
+relacionadas à fonte e como os recursos de fonte são carregados. Ele permite
+definir o estilo de uma fonte, como sua família, tamanho e peso, entre outras
+características. Por fim, o CSS permite que fontes personalizadas sejam
+carregadas em uma página da web. Uma vez adicionada a uma folha de estilo, a
+regra instrui o navegador a baixar a fonte de onde ela está hospedada e exibi-la
+conforme especificado no CSS.
+
+Outro detalhe é que uma das coisas que você vai usar todos os dias no CSS são
+unidades. Elas são usadas para definir comprimentos, espaçamentos, margens,
+elementos de alinhamento e assim por diante. Coisas como “px”, “em”, “rem” ou
+porcentagens.
+
+.setor {
+ margin: 10%;
+ font-size: 0.5em;
+}
+.cabecalho {
+ font-size: 2rem;
+}
+
+Texto:
+text-transform - Essa propriedade pode transformar o texto de um elemento. Existem quatro valores válidos: “capitalize”, “uppercase”, “lowercase” e “none”.
+EX:
+p {
+ t e x t - t r a n s f o r m :
+uppercase;
+}
+------------
+text-decoration - Essa propriedade é usada para adicionar decorações ao texto, incluindo, por exemplo: “underline”, “overline” e “none”.
+EX:
+p {
+ t e x t - d e c o r a t i o n :
+underline;
+}
+------------
+text-align - Por padrão, essa propriedade tem o valor “start”, ou seja, o texto começa na origem 0 da caixa que o contém. Os valores possíveis são: “start”, “end”, “left”,
+“right”, “center” e “justify”.
+EX:
+p {
+ text-align: right;
+}
+------------
+vertical-align - Determina como os elementos embutidos são alinhados verticalmente. Podemos atribuir um valor de comprimento ou porcentagem.
+Além disso, temse as palavras-chave: “baseline”, “sub”, “super”, “top”, “text-top”, “middle”, “bottom” e “textbottom”.
+EX:
+p {
+ vertical-align: textbottom;
+}
+------------
+line-height - Isso permite que você altere a altura de uma linha. Cada linha de texto tem uma certa altura de fonte, mas há espaçamento
+vertical adicional entre as linhas.
+EX:
+p {
+ line-height: 0.9rem;
+}
+------------
+text-indent - Recuar a primeira linha de um parágrafo por um comprimento definido ou uma porcentagem da largura do parágrafo.
+EX:
+p {
+ text-indent: -10px;
+}
+------------
+text-align-last - Por padrão, a última linha de um parágrafo é alinhada seguindo o valor “text-align”.
+EX:
+p {
+ text-align-last: right;
+}
+------------
+word-spacing - Modifica o espaçamento entre cada palavra.
+EX:
+p {
+ word-spacing: 30px;
+}
+------------
+letter-spacing Modifica o espaçamento entre
+cada letra.
+p {
+ letter-spacing: 0.2px;
+}
+------------
+text-shadow Aplica uma sombra ao texto.
+span {
+ text-shadow: red 0.2px
+2px 3px;
+}
+------------
+white-space - Define como o CSS lida com o espaço em branco, novas linhas e guias dentro de um elemento.
+Os valores válidos que reduzem o espaço em branco são: “normal”, “nowrap” e “preline”.
+EX:
+span {
+ white-space: preline;
+}
+------------
+tab-size - Define a largura do caractere de tabulação. Por padrão, é 8, e você pode determinar um valor inteiro 
+que define os espaços de caracteres necessários ou um valor de comprimento.
+EX:
+p {
+ tab-size: 2;
+}
+------------
+direction - Define a direção do texto. Os valores válidos são “ltr” e “rtl”.
+EX:
+p {
+ direction: rtl;
+}
+
+Fontes:
+font-family - Define a família de fontes que o elemento irá usar. Nós as dividimos em fontes Serif, SansSerif e Monospace.
+Aqui está uma lista de algumas das mais populares: Serif: Georgia, Times New Roman; Sans-Serif: Arial, Helvetica, Verdana, Tahoma;
+Monospace: Courier New, Lucida Console.
+EX:
+body {
+ font-family: Helvetica;
+}
+--------------
+font-weight - Essa propriedade define a largura de uma fonte. Você pode usar esses valores predefinidos: “normal”, “bold”, “bolder” e “lighter”
+as palavras-chave numéricas variando de 100 até 900, em que 100 é a fonte mais fina e 900 é a mais espessa.
+EX:
+p {
+ font-weight: bold;
+}
+-------------
+font-style - Permite aplicar um estilo itálico (italic) a uma fonte. Essa propriedade também permite os valores oblíquos (oblique) normal (normal).
+EX:
+p {
+ font-style: italic;
+}
+------------
+font-size - Essa propriedade é usada para determinar o tamanho das fontes. Você pode passar dois tipos de valores:
+um valor de comprimento, como “px”, “em”, “rem” etc. ou uma porcentagem; uma palavra-chave de valor predefinido como, por exemplo:
+“xx-small”, “x-small”, “small” e “large”.
+EX:
+p {
+ font-size: 20px;
+}
+li {
+ font-size: large;
+}
+----------------
+font - A propriedade da fonte permite aplicar diferentes propriedades de fonte em uma única, reduzindo a desordem.
+Devemos definir pelo menos duas propriedades, “font-size” e “fontfamily”, as outras são opcionais.
+EX:
+body {
+ font: 20px Helvetica;
+}
+
+
+
+WebFonts:
+você pode adicionar praticamente qualquer fonte a
+qualquer site. No entanto, ao pesquisar uma fonte on-line, você sempre deve ter
+em mente o preço, o contrato de licença e o método de instalação.
+https://fonts.google.com/

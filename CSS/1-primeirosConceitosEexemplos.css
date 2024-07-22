@@ -1,0 +1,30 @@
+p {
+    font-size: 20px;
+}
+a {
+    color: blue;
+}
+
+p,
+a {
+ font-size: 20px;
+}
+
+.minha-classe {
+    color: orange;
+    font-weight: bold;
+   }
+   #meu-id {
+    font-size: 18px;
+}
+
+p.nome.pessoa{
+    color:blue;
+}
+p#nome.pessoa{
+    color:blue;
+}
+
+.nome-pessoa.cadastro{
+    color:blue;
+}

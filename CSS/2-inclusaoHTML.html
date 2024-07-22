@@ -1,0 +1,50 @@
+Usando a tag <link>:
+
+A tag <link> é a maneira mais simples de incluir um arquivo CSS. Essa é a forma
+preferida de usar o CSS como ele se destina a ser usado: um arquivo CSS é
+incluído por todas as páginas de seu site, e mudar uma linha nesse arquivo afeta
+a apresentação de todas as páginas do site.
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel=”stylesheet” href=”estilo.css”>
+    </head>
+    <body>
+    </body>
+</html>
+
+Usando a tag de estilo (style):
+
+Em vez de usar a tag de <link> para apontar para uma folha de estilo separada
+contendo o arquivo CSS, podemos adicionar o CSS diretamente dentro de uma
+tag de estilo.
+<html>
+    <head>
+
+    </head>
+    <style>
+        body{
+            background-color: linen;
+        }
+        h1{
+            color:maroon;
+        }
+    </style>
+    <body>
+        <h1>este é o título</h1>
+        <p>este é o paragráfo</p>
+    </body>
+</html>
+
+Usando estilos em linha (inline styles) ou embutidos:
+
+Os estilos em linha são a terceira maneira de adicionar CSS a uma página.
+Podemos adicionar um atributo de estilo a qualquer tag HTML e adicionar CSS a
+ela.
+
+<html>
+    <body>
+        <h1 style="color:blue;text-align: center;">Este é o título</h1>
+        <p style="color: green;">Este é o paragráfo</p>
+    </body>
+</html>

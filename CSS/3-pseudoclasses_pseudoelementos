@@ -1,0 +1,67 @@
+Pseudoclasses:
+Pseudoclasses são palavras-chave predefinidas, utilizadas para selecionar
+um elemento com base em seu estado ou para selecionar um elemento-filho
+específico. Elas começam com um único sinal de dois pontos (:).
+Podem ser usadas como parte de um seletor, e são muito úteis para criar
+links ativos (active) ou visitados (visited), por exemplo, mudar o estilo quando o
+mouse está próximo do elemento (hover) ou manter o foco no elemento (focus).
+Muito úteis em diversos casos.
+
+:active - Um elemento sendo ativado pelo usuário (por
+exemplo, clicado). Mais utilizado em links ou botões.
+
+:checked - Uma caixa de seleção (checkbox), opção (option) ou
+tipos de entrada de rádio (radio) que são habilitados.
+
+:default - O padrão em um conjunto de escolhas (por exemplo,
+opção em um botão de seleção (option) ou rádio
+(radio)).
+
+:disabled - Um elemento desabilitado.
+
+:enabled - Um elemento que é habilitado.
+
+:focus - Um elemento com foco.
+
+:hover - Um elemento posicionado pelo mouse.
+
+:link - Um link que não foi visitado.
+
+:required - Um elemento do formulário com o conjunto de
+campos necessários.
+
+:visited - Um link que foi visitado
+
+a {
+ color: red;
+}
+
+a,
+a:visited,
+a:active {
+ color: red;
+}
+
+Pseudoelementos
+Pseudoelementos são usados para estilizar uma parte específica de um
+elemento. Eles começam com duas sequências de dois pontos (::). Às vezes,
+você os identifica em outros códigos com um único símbolo de dois pontos (:),
+mas essa é apenas uma sintaxe suportada por razões de compatibilidade com
+o passado de alguns navegadores. Assim, você deve usar dois símbolos de dois
+pontos (::) para distingui-los das pseudoclasses.
+
+::after - Cria um pseudoelemento após o elemento.
+::before - Cria um pseudoelemento antes do elemento.
+::first-letter - Pode ser usado para estilizar a primeira letra de um bloco
+de texto.
+::first-line - Pode ser usado para estilizar a primeira linha de um bloco
+de texto.
+::selection - Destaca o texto selecionado pelo usuário.
+
+p::first-line {
+ font-size: 3rem;
+}
+
+p::first-letter {
+ font-weight: bolder;
+}

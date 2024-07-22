@@ -1,0 +1,86 @@
+Por padrão, uma página HTML é renderizada pelos navegadores da web com
+muita carência em termos das cores utilizadas. Temos um fundo branco, textos
+na cor preta e links azuis.
+O CSS nos dá a capacidade de adicionarcores aos nossos designs.
+Nós temos estas propriedades: “color”, “backgroundcolor” e “border-color”. Todas elas aceitam um valor de cor,
+que pode ser de diferentes formas.
+
+Cores nomeadas
+Primeiro, temos as palavras-chave
+CSS que definem as cores. O CSS
+começou com 16, mas hoje existe um
+grande número de nomes de cores. São
+insensíveis a maiúsculas e minúsculas.
+https://htmlcolorcodes.com/color-names/
+
+RGB
+RGB é outro modelo de cores baseado na combinação das cores primárias
+vermelho, verde e azul. Composto por três números separados por vírgulas,
+cada um representa a intensidade da respectiva cor primária como um número
+inteiro entre zero e 255. Preto é rgb(0, 0, 0), vermelho é rgb(255, 0, 0) e azul é
+rgb(0, 0, 255). Você pode usar a função “rgb()” para calcular uma cor a partir de
+sua notação RGB.
+
+p {
+ color: rgb(255, 255, 255); /* branco */
+ background-color: rgb(0, 0, 0); /* preto */
+}
+
+Notação hexadecimal
+Outra opção é expressar as
+partes RGB das cores na notação
+hexadecimal, que é composta por três
+blocos. Esses códigos são compostos
+por três pares de caracteres que
+representam a intensidade das três
+cores primárias. Os valores possíveis
+variam de 00 (a menor intensidade
+de uma cor primária) a FF (a maior
+intensidade de uma cor primária). O
+código de cor hexadecimal para preto
+é #000000, vermelho é #FF0000 e azul
+é #0000FF. O preto, que é rgb(0, 0, 0)
+é expresso como #000000. Branco,
+rgb(255, 255, 255), pode ser expresso
+como #FFFFFFFF.
+
+Embora você possa usar qualquer um desses valores, nomes de cores não
+são recomendados. Eles são difíceis de lembrar, mas também introduzem
+imprecisão. Use códigos de cores hexadecimais ou valores RGB para garantir
+que o esquema de cores do seu site tenha a aparência desejada. Eles permitem
+que você escolha o tom exato da cor desejada.
+
+Backgrounds:
+O fundo de um elemento pode ser alterado utilizando várias propriedades do
+CSS.
+
+background-color - Define a cor do plano de fundo do elemento.
+background-image - Define uma imagem como plano de fundo do elemento.
+background-clip - Define até onde o plano de fundo deve se estender dentro
+do elemento.
+background-position - Define a posição da imagem de fundo.
+background-origin - Define a origem da imagem de fundo.
+background-repeat - Define como a imagem de fundo se repete no fundo do
+elemento, a partir da posição do fundo.
+background-attachment - Define como a imagem de fundo se comportará ao rolar a página.
+background-size - Define o tamanho da imagem de fundo.
+
+p {
+ background-color: red;
+}
+div {
+ background-color: #333;
+}
+
+div {
+ background-image: url(imagem.png);
+}
+
+#nome {
+ display: block;
+} /* Aqui vem a descrição do comentário! */
+/* #nome { display: block; } */
+#nome {
+ display: block;
+/* color: blue; */
+}
